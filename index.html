@@ -16,6 +16,7 @@
 
     <!-- Theme CSS -->
     <link href="css/freelancer.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -72,11 +73,11 @@
         <div class="container" id="maincontent" tabindex="-1">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive" src="img/profile.png" alt="">
+                    <img class="img-responsive" src="img/me2.png" alt="Dmitriy Klyuzov" id="profile-image">
                     <div class="intro-text">
                         <h1 class="name">Dmitriy Klyuzov</h1>
-                        <hr class="star-light">
-                        <span class="skills">Front- And Back-End Web Developer</span>
+                        <hr class="star-light" id="name-hr">
+                        <span class="skills" id="web-developer">Front- And Back-End Web Developer</span>
                     </div>
                 </div>
             </div>
@@ -92,66 +93,25 @@
                     <hr class="star-primary">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+            <div class="row portfolio-row portfolio-item">
+                <div class="col-md-5 col-md-offset-1 portfolio-left">
+                    <!-- <img class="img-responsive portfolio-image" src="img/portfolio/timereflection-2.jpg" alt="Dmitriy Klyuzov"> -->
+                    <a href="http://timereflectioninc.com" target="_blank" class="portfolio-link">
                         <div class="caption">
                             <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
+                                <i class="fa fa-arrow-circle-right fa-2x"></i>
+                                <h3>Visit</h3>
                             </div>
                         </div>
-                        <img src="img/portfolio/cabin.png" class="img-responsive" alt="Cabin">
+                        <img src="img/portfolio/timereflection-2.jpg" class="img-responsive" alt="Time Reflection Website">
                     </a>
                 </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/cake.png" class="img-responsive" alt="Slice of cake">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/circus.png" class="img-responsive" alt="Circus tent">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/game.png" class="img-responsive" alt="Game controller">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/safe.png" class="img-responsive" alt="Safe">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/submarine.png" class="img-responsive" alt="Submarine">
-                    </a>
+                <div class="col-md-5 portfolio-right">
+                    <h3 class="text-center">Time Reflection</h3>
+                    <br>
+                    <p>Time Reflection is a responsive web app bult for a watch dealer to showcase her inventory.
+                    The app provides login, registration, listing, and admin functionality.
+                    It is built using Bootstrap, jQuery AJAX (edit in place, infinite scrolling), and PHP.</p>
                 </div>
             </div>
         </div>
@@ -160,23 +120,77 @@
     <!-- About Section -->
     <section class="success" id="about">
         <div class="container">
+
+            <!-- About Me -->
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>About</h2>
+                    <h2>About Me</h2>
                     <hr class="star-light">
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
-                    <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                    <p>I am a recent Baruch College graduate and a Freelance Web Developer.
+                    I specialize in Front- and Back-End Development and have interest and
+                    experience in both.
+                    </p>
                 </div>
                 <div class="col-lg-4">
-                    <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                    <p>Whether you're a developer looking to collaborate, a hiring manager looking for talent, or a client looking for someone to build a website for you, get in touch with me and let's create awesome things!</p>
+                    <!-- <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p> -->
                 </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
+                <!-- <div class="col-lg-8 col-lg-offset-2 text-center">
                     <a href="#" class="btn btn-lg btn-outline">
                         <i class="fa fa-download"></i> Download Theme
                     </a>
+                </div> -->
+            </div>
+            
+            <!-- My Skills -->
+            <div class="subsection" id="skills">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2>My Skills</h2>
+                        <!-- <h3>My Skills</h3> -->
+                        <hr class="star-light">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-2">
+                        <h3>Front-End</h3>
+                        <p>
+                            <i class="fa fa-circle"></i> &nbsp; HTML & CSS<br>
+                            <i class="fa fa-circle"></i> &nbsp; JavaScript & jQuery <br>
+                            <i class="fa fa-circle"></i> &nbsp; Bootstrap <br>
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-lg-offset-2">
+                        <h3>Back-end</h3>
+                        <p>
+                            <i class="fa fa-circle"></i> &nbsp; PHP
+                            <br>
+                            <i class="fa fa-circle"></i> &nbsp; MySQL
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subsection" id="learning">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h3>Currently learning</h3>
+                        <!-- <h3>My Skills</h3> -->
+                        <hr class="star-light">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-10 col-lg-offset-1">
+                        <p class="text-center">
+                            <i class="fa fa-circle-o"></i> &nbsp; AngularJS 2 &nbsp;&nbsp;
+                            <i class="fa fa-circle-o"></i> &nbsp; Node.js & Express &nbsp;&nbsp;
+                            <i class="fa fa-circle-o"></i> &nbsp; MongoDB & JSON
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -242,12 +256,17 @@
         <div class="footer-above">
             <div class="container">
                 <div class="row">
-                    <div class="footer-col col-md-4">
+                    <div class="footer-col col-md-6">
                         <h3>Location</h3>
-                        <p>1405 71st Street, Apt B3
-                        <br>Brooklyn, NY 11228</p>
+                        <p>
+                        1405 71st Street, Apt B3
+                        <br>
+                        Brooklyn, NY 11228
+                        <br>
+                        <a href="tel:+13474957605">+1 (347) 495-7605</a>
+                        </p>
                     </div>
-                    <div class="footer-col col-md-4">
+                    <div class="footer-col col-md-6">
                         <h3>Connect with me</h3>
                         <ul class="list-inline">
                             <!-- <li>
@@ -257,20 +276,20 @@
                                 <a href="#" class="btn-social btn-outline"><span class="sr-only">Google Plus</span><i class="fa fa-fw fa-google-plus"></i></a>
                             </li> -->
                             <li>
-                                <a href="https://github.com/dmitriyklyuzov/" class="btn-social btn-outline"><span class="sr-only">Github</span><i class="fa fa-fw fa-github"></i></a>
+                                <a href="https://github.com/dmitriyklyuzov/" target="_blank" class="btn-social btn-outline"><span class="sr-only">Github</span><i class="fa fa-fw fa-github"></i></a>
                             </li>
                             <li>
-                                <a href="https://www.linkedin.com/in/dmitriy-klyuzov/" class="btn-social btn-outline"><span class="sr-only">Linked In</span><i class="fa fa-fw fa-linkedin"></i></a>
+                                <a href="https://www.linkedin.com/in/dmitriy-klyuzov/" target="_blank" class="btn-social btn-outline"><span class="sr-only">Linked In</span><i class="fa fa-fw fa-linkedin"></i></a>
                             </li>
                             <li>
-                                <a href="#" class="btn-social btn-outline"><span class="sr-only">Dribble</span><i class="fa fa-fw fa-dribbble"></i></a>
+                                <a href="https://www.instagram.com/dmitriyklyuzov/" target="_blank" class="btn-social btn-outline"><span class="sr-only">Instagram</span><i class="fa fa-fw fa-instagram"></i></a>
                             </li>
                         </ul>
                     </div>
-                    <div class="footer-col col-md-4">
+                    <!-- <div class="footer-col col-md-4">
                         <h3>About Freelancer</h3>
                         <p>Freelance is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -531,6 +550,39 @@
 
     <!-- Theme JavaScript -->
     <script src="js/freelancer.min.js"></script>
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal("#profile-image");
+        sr.reveal(".name",{
+            origin: 'bottom',
+            duration: 200
+        });
+        sr.reveal("#name-hr",{
+            origin: 'bottom',
+            duration: 200,
+            delay: 200
+        });
+        sr.reveal("#web-developer",{
+            origin: 'bottom',
+            duration: 200,
+            delay: 400
+        });
+        sr.reveal(".portfolio-left",{
+            origin: 'left',
+            duration: 300,
+            distance: '300px'
+        });
+        sr.reveal(".portfolio-right",{
+            origin: 'right',
+            duration: 300,
+            distance: '300px',
+            delay: 100
+        });
+    </script>
 
 </body>
 
