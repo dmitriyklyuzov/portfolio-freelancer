@@ -89,7 +89,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
+                    <h2 class="section-name">Portfolio</h2>
                     <hr class="star-primary">
                 </div>
             </div>
@@ -124,7 +124,7 @@
             <!-- About Me -->
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>About Me</h2>
+                    <h2 class="section-name">About Me</h2>
                     <hr class="star-light">
                 </div>
             </div>
@@ -150,7 +150,7 @@
             <div class="subsection" id="skills">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h2>My Skills</h2>
+                        <h2 class="section-name">My Skills</h2>
                         <!-- <h3>My Skills</h3> -->
                         <hr class="star-light">
                     </div>
@@ -178,7 +178,7 @@
             <div class="subsection" id="learning">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h3>Currently learning</h3>
+                        <h3 class="section-name">Currently learning</h3>
                         <!-- <h3>My Skills</h3> -->
                         <hr class="star-light">
                     </div>
@@ -201,7 +201,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Contact Me</h2>
+                    <h2 class="section-name">Contact Me</h2>
                     <hr class="star-primary">
                 </div>
             </div>
@@ -344,18 +344,19 @@
         window.sr = ScrollReveal();
         sr.reveal("#profile-image");
         sr.reveal(".name",{
-            origin: 'bottom',
-            duration: 200
+            // origin: 'bottom',
+            // duration: 200,
+            delay: 100
         });
-        sr.reveal("#name-hr",{
-            origin: 'bottom',
-            duration: 200,
-            delay: 200
-        });
+        // sr.reveal("#name-hr",{
+        //     origin: 'bottom',
+        //     duration: 200,
+        //     delay: 200
+        // });
         sr.reveal("#web-developer",{
-            origin: 'bottom',
-            duration: 200,
-            delay: 400
+            // origin: 'bottom',
+            // duration: 200,
+            delay: 300
         });
         sr.reveal(".portfolio-left",{
             origin: 'left',
@@ -368,6 +369,7 @@
             distance: '300px',
             delay: 100
         });
+        sr.reveal(".section-name");
     </script>
 
 </body>
