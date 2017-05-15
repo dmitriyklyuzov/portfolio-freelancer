@@ -5,3 +5,7 @@
 .portfolio-row{
 	padding-top: 50px;
 }
+
+.btn-default{
+	transition: all .3s ease-in-out;
+}
